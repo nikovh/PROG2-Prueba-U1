@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imgPastel"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        app:srcCompat="@drawable/pstl" />
+
+    <ImageView
+        android:id="@+id/imgCazuela"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPastel"
+        app:srcCompat="@drawable/czl" />
+
+    <TextView
+        android:id="@+id/tvPastel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Pastel de Choclo"
+        android:textColor="#ff253b6e"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgPastel"
+        app:layout_constraintTop_toTopOf="@+id/imgPastel" />
+
+    <EditText
+        android:id="@+id/etPastel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/etCazuela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:ems="3"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Cant."
+        android:textColor="#ff253b6e"
+        app:layout_constraintStart_toStartOf="@+id/tvPastel"
+        app:layout_constraintTop_toBottomOf="@+id/tvPastel" />
+
+
+    <TextView
+        android:id="@+id/tvCantCazuelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="$ 0"
+        android:textColor="#ff253b6e"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Cant."
+        android:textColor="#ff253b6e"
+        app:layout_constraintStart_toStartOf="@+id/tvCazuela"
+        app:layout_constraintTop_toBottomOf="@+id/tvCazuela" />
+
+    <TextView
+        android:id="@+id/tvCazuela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Cazuela"
+        android:textColor="#ff253b6e"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgCazuela"
+        app:layout_constraintTop_toTopOf="@+id/imgCazuela" />
+
+    <TextView
+        android:id="@+id/tvCantPasteles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="$ 0"
+        android:textColor="#ff253b6e"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tvComida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Comida"
+        android:textColor="#ff253b6e"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgCazuela"
+        app:layout_constraintTop_toBottomOf="@+id/imgCazuela" />
+
+    <TextView
+        android:id="@+id/montoComida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="$ 0"
+        android:textColor="#ff253b6e"
+        android:hint="$"
+        app:layout_constraintStart_toEndOf="@+id/tvComida"
+        app:layout_constraintTop_toTopOf="@+id/tvComida" />
+
+    <TextView
+        android:id="@+id/tvPropina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Propina"
+        android:textColor="#ff253b6e"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvComida"
+        app:layout_constraintTop_toBottomOf="@+id/tvComida" />
+
+    <TextView
+        android:id="@+id/montoPropina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 0"
+        android:textColor="#ff253b6e"
+        app:layout_constraintStart_toStartOf="@+id/montoComida"
+        app:layout_constraintTop_toTopOf="@+id/tvPropina" />
+
+    <Switch
+        android:id="@+id/swPropina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPropina"
+        app:layout_constraintEnd_toStartOf="@+id/tvPropina"
+        app:layout_constraintTop_toTopOf="@+id/tvPropina" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TOTAL"
+        android:textColor="#ff253b6e"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvPropina"
+        app:layout_constraintTop_toBottomOf="@+id/tvPropina" />
+
+    <TextView
+        android:id="@+id/montoTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 0"
+        android:textColor="#ff253b6e"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/montoPropina"
+        app:layout_constraintTop_toTopOf="@+id/tvTotal" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
